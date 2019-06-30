@@ -1,0 +1,167 @@
+\chapter*{}
+%\thispagestyle{empty}
+%\cleardoublepage
+
+\thispagestyle{empty}
+
+\input{portada/portada_2}
+
+
+
+\cleardoublepage
+\thispagestyle{empty}
+
+\begin{center}
+{\large\bfseries Detección de Plagio en R}\\
+\end{center}
+\begin{center}
+Antonio Javier Rodríguez Pérez\\
+\end{center}
+
+%\vspace{0.7cm}
+\noindent{\textbf{Palabras clave}: detección de plagio, analizador léxico, analizador sintáctico, n-grama, algoritmo String Tiling}\\
+
+\vspace{0.7cm}
+\noindent{\textbf{Resumen}}\\
+
+El plagio en código fuente y su detección es un problema que encontramos con gran frecuencia en la actualidad dado que hay una gran cantidad de software nuevo y programas en general que se crean cada día.
+\newline
+Este problema es incluso más preponderante en el ámbito educativo, ya que durante los últimos años se ha convertido en una práctica cada vez más habitual entre los estudiantes.
+\newline
+Es por esto que es importante que tengamos alguna forma de saber si estos programas son genuinos o tan solo una copia o una modificación de algo ya existente.
+\newline
+Para detectarlo existen diversas herramientas, pero no existe ninguna creada específicamente para el lenguaje R. 
+
+\vspace{0.3cm}
+
+En este trabajo se busca resolver este problema adaptando una de las herramientas disponibles llamada JPLAG para que funcione también con este lenguaje.
+\newline
+JPLAG permite determinar con mayor exactitud si existe plagio entre un conjunto de archivos de un mismo lenguaje que se le proporcione.
+\newline
+Modificar JPLAG para que sirva con R permitirá que la detección de plagio entre programas escritos en este lenguaje sea más rápida y eficiente que con cualquier otro método ya existente.
+
+\cleardoublepage
+
+
+\thispagestyle{empty}
+
+
+\begin{center}
+{\large\bfseries Plagiarism Detection in R}\\
+\end{center}
+\begin{center}
+Antonio Javier Rodríguez Pérez\\
+\end{center}
+
+%\vspace{0.7cm}
+\noindent{\textbf{Keywords}: Plagiarism Detection, Parser, Lexer, n-gram, String Tiling Algorithm}\\
+
+\vspace{0.7cm}
+\noindent{\textbf{Abstract}}\\
+
+Plagiarism in source code and its detection is a problem we frecuently find nowadays due to the immense amount of new software and programs in general that are made everyday.
+\newline
+This problem is even more prevalent in the edutational field, since in recent years it has become an increasingly common practice among students.
+\newline
+For those reasons it's important to have a way of knowing whether that software is genuine or its just a copy or modification of something already existing.
+\newline
+In order to detect that plagiarism there are many tools avaliable, but there is not yet one created specifically for the language R.
+
+\vspace{0.3cm}
+
+In this proyect we try to solve this issue by adapting one of the avaliable tools called JPLAG so that it'll also function with R.
+\newline
+JPLAG allows us to determine with great precisión whether there is plagiarism among a set of files written in the same language, that you supply JPLAG with.
+\newline
+If JPLAG is modified so that it also detects R files, we will be able to detect plagiarism among programs in this language in a faster and more efficient way than any other existing method. 
+
+\chapter*{}
+\thispagestyle{empty}
+
+\noindent\rule[-1ex]{\textwidth}{2pt}\\[4.5ex]
+
+Yo, \textbf{Antonio Javier Rodríguez Pérez}, alumno de la titulación Grado en Ingeniería Informática de la \textbf{Escuela Técnica Superior
+de Ingenierías Informática y de Telecomunicación de la Universidad de Granada}, con DNI 50643240T, autorizo la
+ubicación de la siguiente copia de mi Trabajo Fin de Grado en la biblioteca del centro para que pueda ser
+consultada por las personas que lo deseen.
+
+\vspace{6cm}
+
+\noindent Fdo: Antonio Javier Rodríguez Pérez
+
+\vspace{2cm}
+
+\begin{flushright}
+Granada a 2 de Septiembre de 2018 .
+\end{flushright}
+
+
+\chapter*{}
+\thispagestyle{empty}
+
+\noindent\rule[-1ex]{\textwidth}{2pt}\\[4.5ex]
+
+Dª. \textbf{Rocío Celeste Romero Zaliz}, Profesora del Departamento de Ciencias de la Computación e Inteligencia Artificial de la Universidad de Granada.
+
+
+\vspace{0.5cm}
+
+\textbf{Informa:}
+
+\vspace{0.5cm}
+
+Que el presente trabajo, titulado \textit{\textbf{DETECCIÓN DE PLAGIO EN R}},
+ha sido realizado bajo su supervisión por \textbf{Antonio Javier Rodríguez Pérez}, y autorizo la defensa de dicho trabajo ante el tribunal
+que corresponda.
+
+\vspace{0.5cm}
+
+Y para que conste, expide y firma el presente informe en Granada a 2 de Septiembre de 2018 .
+
+\vspace{1cm}
+
+\textbf{La directora:}
+
+\vspace{5cm}
+
+\noindent \textbf{Rocío Celeste Romero Zaliz}
+
+\chapter*{Agradecimientos}
+\thispagestyle{empty}
+
+       \vspace{1cm}
+
+Gracias a mi madre y a mi padre, Josefa y Antonio, por insistir en mi educación y ayudarme siempre que lo necesitase.
+
+\bigskip
+
+A mi hermana Laura por sus recomendaciones y por estar siempre ahí.
+
+\bigskip
+
+A Rocío, mi tutora, por guiarme y aconsejarme durante la creación de este proyecto.
+
+\bigskip
+
+A mis amigos de la facultad, con los que he pasado cuatro duros años de estudio. De estos amigos debo mencionar a Javi, Sergio y Jesús ya que son con los que más tiempo he pasado y son los que definen en gran parte quien soy.
+
+\bigskip
+
+Y por último, a Alba, con ella he pasado la mayor parte del tiempo durante estos años de carrera y ha conseguido que vea el mundo de forma diferente.
+
+
+
+\chapter*{Declaración de autoría y originalidad del TFG}
+\thispagestyle{empty}
+
+Yo, Antonio Javier Rodríguez Pérez, con DNI 50643240T, declaro que el presente documento ha sido realizado por mí y se basa en mi propio trabajo, a menos que se indique lo contrario. No se ha utilizado el trabajo de ninguna otra persona sin el debido reconocimiento. Todas las referencias han sido citadas y todas las fuentes de información y conjuntos de datos han sido específicamente reconocidos.
+
+\vspace{6cm}
+
+\noindent Fdo: Antonio Javier Rodríguez Pérez
+
+\vspace{2cm}
+
+\begin{flushright}
+Granada a 2 de Septiembre de 2018 .
+\end{flushright}

@@ -1,0 +1,131 @@
+\chapter{Planificación}
+
+En este capítulo explico la metodología que se ha seguido para la realización de este trabajo, así como la organización de las tareas hecha siguiendo esta metodología.
+\newline
+Por último, concluimos este capítulo con el presupuesto del proyecto.
+
+
+\section{Metodología usada.}
+
+He usado una metodología ágil \cite{metodologia_agil} basándome en SCRUM \cite{scrum}: esta metodología consiste en mantener un contacto frecuente (cada 2 semanas aproximadamente) con nuestro cliente a través de reuniones para revisar el progreso conseguido en la anterior entrega y plantear los objetivos importantes para la próxima. Después de cada reunión se hace un sprint semanal o bisemanal para cumplir los objetivos planteados y se contacta en cualquier momento con el cliente si surge algún problema para replantear el sprint.
+\newline
+Esta metodología permite que haya un seguimiento del avance mucho más completo, acepta cambios durante cualquier etapa durante el desarrollo y soluciona los errores que surgen de forma más eficaz y con menos presión ya que no hay una entrega general a largo plazo.
+
+En mi caso mi tutora de TFG es mi cliente y las reuniones se han llevado a cabo en su despacho y online (cuando no era posible hablar en persona) cada una o dos semanas dependiendo de la cantidad de trabajo asignada al sprint de la semana actual.
+
+
+\section{Reparto de objetivos.}
+
+Usando la metodología mencionada en la sección anterior estos han sido las tareas que se han llevado a cabo en cada sprint desde que comencé el trabajo el 4/4/18 hasta el 27/8/18:
+
+\begin{itemize}
+	\item \textbf{Primera reunión (4/4/18)}:
+	\begin{itemize}
+	\item Revisión bibliográfica sobre detección de plagio.
+	\item Revisión de software de plagio en código fuente.
+	\item Repaso de R.
+	\item Búsqueda de software de plagio que funcione con R.
+	\end{itemize}
+	\item \textbf{Segunda reunión (18/4/18)}:
+	\begin{itemize}
+	\item Repaso rápido de uso de Latex.
+	\item Empezar la redacción del proyecto en Latex.
+	\item Ejecución y uso de la versión actual de JPLAG.
+	\end{itemize}
+	\item \textbf{Tercera reunión (25/4/18)}:
+	\begin{itemize}
+	\item Especificación de requisitos.
+	\item Entender estructura de clases de JPLAG
+	\end{itemize}
+	\item \textbf{Cuarta reunión (9/5/18)}:
+	\begin{itemize}
+	\item Adaptar JPLAG para que detecte y use la extensión .r.
+	\item Aprender cómo funciona en mayor profundidad Apache Maven para modificar correctamente el archivo pom que usa el proyecto en total.
+	\end{itemize}
+	\item \textbf{Quinta reunión (16/5/18)}:
+	\begin{itemize}
+	\item Aprender cómo consigue los tokens de los archivos JPLAG.
+	\item Aprender ANTLR4.
+	\item Empezar a crear una gramática que define a R para ANTLR4.
+	\end{itemize}
+	\item \textbf{Sexta reunión (1/6/18)}:
+	\begin{itemize}
+	\item Estudiar en mayor profundidad la estructura del lenguaje R con sus características específicas para poder crear correctamente su gramática.
+	\item Redactar progreso hasta el momento.
+	\end{itemize}
+	\item \textbf{Séptima reunión (13/6/18)}:
+	\begin{itemize}
+	\item Crear los archivos .java dentro de nuestro frontend que comunican el parser con JPLAG.
+	\item Implementar un parser inicial básico.
+	\end{itemize}
+	\item \textbf{Octava reunión (20/6/18)}:
+	\begin{itemize}
+	\item Conectar el parser creado con JPLAG de forma que reciba los tokens de los archivos que analiza.
+	\item Elegir los tokens más relevantes del lenguaje (primer intento).
+	\end{itemize}
+	\item \textbf{Novena reunión (4/7/18)}:
+	\begin{itemize}
+	\item Realizar prueba inicial con versión actual del frontend.
+	\item Redactar en la memoria los avances.
+	\end{itemize}
+	\item \textbf{Décima reunión (11/7/18)}:
+	\begin{itemize}
+	\item Modificar la gramática para poder seleccionar tokens más importantes.
+	\item Elegir los tokens más relevantes del lenguaje (segundo intento).
+	\item Probar de nuevo JPLAG con las modificaciones hechas.
+	\end{itemize}
+	\item \textbf{Undécima reunión (25/7/18)}:
+	\begin{itemize}
+	\item Última modificación a la gramática.
+	\item Elegir los tokens más relevantes del lenguaje por última vez.
+	\item Probar de nuevo JPLAG con las modificaciones hechas con los archivos de alumnos que obtenemos de la tutora.
+	\item Anonimizar los archivos de alumnos.
+	\end{itemize}
+	\item \textbf{Duodécima reunión (6/8/18)}:
+	\begin{itemize}
+	\item Realizar los benchmarks con todas las entregas de los alumnos con nuestro frontend de R. 
+	\item Realizar los benchmarks con todas las entregas de los alumnos con el frontend de texto plano.
+	\item Realizar los benchmarks con todas las entregas de los alumnos con MOSS.
+	\end{itemize}
+	\item \textbf{Trigésima reunión (14/8/18)}:
+	\begin{itemize}
+	\item Escribir en la memoria la comparación de las pruebas realizadas.
+	\item Terminar de redactar la memoria y corregir errores.
+	\end{itemize}
+	\item \textbf{Cuadragésima reunión (27/8/18)}:
+	\begin{itemize}
+	\item Últimas mejoras y corrección de errores en la memoria.
+	\end{itemize}
+\end{itemize}
+
+\section{Presupuesto}
+
+En este apartado planteamos un análisis del valor de los recursos usados para el desarrollo de este proyecto.
+\subsection{Recursos materiales}
+Aunque las herramientas que hemos estado manipulando para la detección de plagio son gratuitas, hemos hecho uso de una máquina local para realizar todas la pruebas, buscar información y redactar la memoria. Se trata de un ordenador de sobremesa con las siguiente especificaciones:
+\begin{itemize}
+\item Procesador: Intel i5 4670K (200 \euro)
+\item Ram: 8 GB DDR3 (75 \euro)
+\item Almacenamiento: HDD 1 TB 7200 rpm (50 \euro)
+\item F. alimentación: LC-Power LC600H-12 (44 \euro)
+\item Placa base: MSI H81M-P33 (60 \euro)
+\item Caja: Aerocool V3XAD (30 \euro) 
+\item Sistema Operativo: Windows 10 (proporcionado por la Universidad de Granada)
+\end{itemize}
+Esto asciende a un total de 459 \euro , aunque a esto hay que añadirle gastos como la electricidad, el material de papelería usado y la conexión a internet. 
+
+
+\subsection{Recursos humanos}
+
+Teniendo en cuenta que ha sido un trabajo de unos cinco meses de duración con 4 horas de media de trabajo diario 5 días a la semana, tenemos un total de 400 horas de trabajo.
+\newline
+El salario medio de un ingeniero informático con menos de un año de experiencia es de 17.248\euro  brutos al año.
+\newline
+400 horas de trabajo equivalen a trabajar durante aproximadamente tres meses por lo que la realización de este trabajo equivale a un total de 4.312\euro.
+
+
+\subsection{Total}
+
+Juntando los gastos estimados en recursos materiales (600 \euro) y en recursos humanos (4.312 \euro) obtenemos que el coste total aproximado de este proyecto ha sido de 4.912 \euro .
+
+
